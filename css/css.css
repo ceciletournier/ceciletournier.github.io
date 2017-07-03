@@ -244,7 +244,7 @@ footer a:hover {
 	border: 1px solid #dfdfdf;	
 }
 
-.form-control:not(:hover):not(:focus) {
+.form-control:not(:focus) {
 	border-left: none;
 }
 
@@ -261,7 +261,9 @@ footer a:hover {
 	margin-top: 30px;
 	max-width: 100%;
 }
-
+.form-message .form-control:not(:focus) {
+	border-left: 1px solid #dfdfdf;	
+}
 .page-contact header {
 	margin-bottom: 100px;
 }
