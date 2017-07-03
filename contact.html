@@ -10,7 +10,7 @@
     <link href="css/bootstrap.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/css.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> 
-
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.7.1/dist/clipboard.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -66,9 +66,9 @@
                 <h2 class="find-me">FIND ME HERE</h2>
 
                 <ul class="list-unstyled list-inline contact-reseau">
-                    <li><a href="#" class="be-contact-hover"><img src="images/be-contact-page.png" alt=""/></a></li>
-                    <li><a href="#" class="in-contact-hover"><img src="images/in-contact-page.png" alt=""/></a></li>
-                    <li><a href="#" class="mail-contact-hover"><img src="images/mail-contact-page.png" alt=""/></a></li>
+                    <li><a href="#" class="be-contact-hover clip" data-clipboard-text="@Cécile Tournier"><img src="images/be-contact-page.png" alt=""/></a></li>
+                    <li><a href="#" class="in-contact-hover clip" data-clipboard-text="@Cécile Tournier"><img src="images/in-contact-page.png" alt=""/></a></li>
+                    <li><a href="#" class="mail-contact-hover clip" data-clipboard-text="tournier.cecile@hotmail.fr"><img src="images/mail-contact-page.png" alt=""/></a></li>
                     </br><em class="contact-reseau-title show1">@Cécile Tournier</em><em class="contact-reseau-title show2">tournier.cecile@hotmail.fr</em>
                 </ul>
 
@@ -157,6 +157,9 @@
       $('.show2').hide();      
     });
     </script>
+    <script>		
+		var clipboard = new Clipboard('.clip');	
+	</script>
 
 </body>
 
