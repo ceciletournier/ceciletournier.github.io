@@ -241,11 +241,12 @@ footer a:hover {
 
 .form-control {
 	box-shadow: none;
-	border: 1px solid #dfdfdf;	
+	border: 1px solid #dfdfdf;
+	transition: border-width ease-in-out .15s;
 }
 
 .form-control:not(:focus) {
-	border-left: none;
+	border-left: 0px;
 }
 
 .form-control:focus {
