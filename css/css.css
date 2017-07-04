@@ -299,6 +299,9 @@ footer a:hover {
 	color: #878787;
 	font-weight: 300;
 	font-style: normal;
+	position: absolute;
+	width:100%;
+	text-align: center;
 }
 
 .form-message .input-group {
