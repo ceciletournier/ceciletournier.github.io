@@ -83,30 +83,32 @@
             </div>
 
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-center">
-                <div class="form-contact">
-                    <label class="sr-only" for="inlineFormInputGroup">Votre email</label>
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                        <div class="input-group-addon"><img src="images/mail-footer.png"/></div>
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Votre email">
-                    </div>
-                </div>
+				<form action="https://formspree.io/tournier.cecile@hotmail.fr" method="POST">
+					<div class="form-contact">
+						<label class="sr-only" for="inlineFormInputGroup">Votre email</label>
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+							<div class="input-group-addon"><img src="images/mail-footer.png"/></div>
+							<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Votre email" name="_replyto">
+						</div>
+					</div>
 
-                <div class="form-contact">
-                    <label class="sr-only" for="inlineFormInputGroup">Objet</label>
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                        <div class="input-group-addon"><img src="images/object.png"/></div>
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Objet">
-                    </div>
-                </div>
+					<div class="form-contact">
+						<label class="sr-only" for="inlineFormInputGroup">Objet</label>
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+							<div class="input-group-addon"><img src="images/object.png"/></div>
+							<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Objet" name="_subject">
+						</div>
+					</div>
 
-                <div class="form-message">
-                    <label class="sr-only" for="inlineFormInputGroup">Message</label>
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                        <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message"></textarea>
-                    </div>
-                </div>
+					<div class="form-message">
+						<label class="sr-only" for="inlineFormInputGroup">Message</label>
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+							<textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message" name="message"></textarea>
+						</div>
+					</div>
 
-                <button class="button-contact-me"><a href="#">CONTACT ME</a></button>
+					<input type="submit" class="button-contact-me" value="CONTACT ME">
+				</form>
             </div>
         </div>
     </div>
