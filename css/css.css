@@ -64,15 +64,21 @@ header .contact {
 
 }
 
-.contact a {
-	font-weight: 300;
-	font-size: 10px;
-}
 
 .contact {
 	background-color: #fff;
 	border-radius: 30px;
+	text-align: center;
 }
+.contact a {
+	font-weight: 300;
+	font-size: 10px;
+	display: block;
+	text-align: center;
+}
+contact span {
+	display: block;
+}	
 
 h2 {
 	font-weight: 900;
