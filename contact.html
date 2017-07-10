@@ -77,12 +77,12 @@
             </div>
 
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-center">
-				<form action="https://formspree.io/tournier.cecile@hotmail.fr" method="POST">
+				<form onsubmit="return sendForm()" method="GET" name="contactform">
 					<div class="form-contact">
 						<label class="sr-only" for="inlineFormInputGroup">Votre email</label>
 						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
 							<div class="input-group-addon"><img src="images/mail-footer.png"/></div>
-							<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Votre email" name="_replyto">
+							<input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Votre email" name="_replyto" required>
 						</div>
 					</div>
 
@@ -90,16 +90,24 @@
 						<label class="sr-only" for="inlineFormInputGroup">Objet</label>
 						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
 							<div class="input-group-addon"><img src="images/object.png"/></div>
-							<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Objet" name="_subject">
+							<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Objet" name="_subject" required>
 						</div>
 					</div>
 
 					<div class="form-message">
 						<label class="sr-only" for="inlineFormInputGroup">Message</label>
 						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-							<textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message" name="message"></textarea>
+							<textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message" name="message" required></textarea>
 						</div>
 					</div>
+
+                    <div class="form-submitted form-submitted-success" >
+                        <span>Message sent !</span>
+                    </div>
+
+                    <div class="form-submitted form-submitted-error" >
+                        <span>An error occured :(</span>
+                    </div>
 
 					<input type="submit" class="button-contact-me" value="CONTACT ME">
 				</form>
@@ -161,6 +169,28 @@
 		var clipboard = new Clipboard('.clip');	
 	</script>
 
+    <script>
+        function sendForm() {
+            $.ajax({
+                url: "https://formspree.io/tournier.cecile@hotmail.fr", 
+                method: "POST",
+                data: {
+                    _subject: document.forms["contactform"]._subject.value,
+                    _replyto: document.forms["contactform"]._replyto.value,
+                    message: document.forms["contactform"].message.value,
+                    },
+                dataType: "json",
+                success:function(data) {
+                    $('.form-submitted-success').show();
+                },
+                error:function(date) {
+                    $('.form-submitted-error').show();
+                }
+            });
+            
+            return false;
+        };
+    </script>
 </body>
 
 </html>

@@ -269,6 +269,26 @@ footer a:hover {
 .form-message .form-control:not(:focus) {
 	border-left: 1px solid #dfdfdf;	
 }
+
+
+.form-submitted {
+	border-radius: 5px;
+	border: 1px solid;
+	margin-top: 20px;
+	padding: 3px;
+	display:none;
+}
+.form-submitted-success {
+	border-color:#004520;
+	background-color:#afdfc6;
+	color: #004520;
+}
+.form-submitted-error {
+	border-color:#70000e;
+	background-color:#ff99a6;
+	color: #70000e;
+}
+
 .page-contact header {
 	margin-bottom: 100px;
 }
