@@ -61,9 +61,7 @@ header .contact {
 	line-height: 18px;
 	margin-top: 18px;
 	letter-spacing: 0;
-
 }
-
 
 .contact {
 	background-color: #fff;
@@ -76,7 +74,8 @@ header .contact {
 	display: block;
 	text-align: center;
 }
-contact span {
+
+.contact span {
 	display: block;
 }	
 
@@ -104,7 +103,6 @@ h2 {
 	border: 0;
 	padding: 6px 30px;
 	letter-spacing: 2px;
-	
 	font-size: 11px;
 	font-weight: 500;
 	color: #fff;
@@ -166,7 +164,7 @@ footer a:hover {
 }
 
 
-/*           ABOUT          */
+/*********************************************************           ABOUT          */
 
 .photo-moi {
 	width: 100%;
@@ -185,9 +183,9 @@ footer a:hover {
 }
 
 .competences {
-	background-color: #f8f8f8;
+	background-color: #f1f1f1;
 	height: 290px;
-	padding: 57px 0 ;
+	padding: 57px 46px;
 }
 
 .page-about .button-contact-me {
@@ -235,7 +233,16 @@ footer a:hover {
 	background-color: #ffed55;
 }
 
-/*           CONTACT           */
+/*********************************************************           CONTACT           */
+
+.col-contact-padding {
+	padding: 0 60px;
+}
+
+.col-contact-border {
+	border-left: 1px solid #dcdcdc; 
+	padding: 0 60px;
+}
 
 .input-group-addon {
 	background-color: #fff;
@@ -266,6 +273,7 @@ footer a:hover {
 	margin-top: 30px;
 	max-width: 100%;
 }
+
 .form-message .form-control:not(:focus) {
 	border-left: 1px solid #dfdfdf;	
 }
@@ -291,6 +299,16 @@ footer a:hover {
 
 .page-contact header {
 	margin-bottom: 100px;
+}
+
+.page-contact p a {
+	color: #000;
+	font-weight: 500;
+	color: #9f9f9f;
+}
+
+.page-contact p a:hover {
+	color: #37cdf7;
 }
 
 
@@ -359,7 +377,7 @@ footer a:hover {
 
 
 
-/*                       VP             */
+/*********************************************************                       VP             */
 
 
 .page-projets header {
@@ -388,3 +406,102 @@ footer a:hover {
 .margin-top-30 {
 	margin-top: 30px;
 }
+
+
+
+
+/*************************************************************** RESPONSIVE **********/
+
+/*md*/ 
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+
+.page-about h2 {
+	margin-top: 35px;
+}
+
+.competences h2{
+	margin-top: 12px;
+}
+
+}
+
+/*sm*/ 
+@media screen and (min-width: 767px) and (max-width: 991px) {
+
+.page-about h2 {
+	margin-top: 0;
+}
+
+.competences-webd {
+	margin-bottom: 30px;
+	padding: 57px 150px;
+}
+
+.competences h2{
+	margin-top: 12px;
+}
+
+.competences-graphic {
+	padding: 57px 70px;
+}
+
+.competences-coding {
+	padding: 57px 65px;
+}
+
+.margin-top-sm-plus {
+	margin-top: 80px;
+}
+
+.margin-top-sm {
+	margin-top: 60px;
+}
+
+.col-contact-padding {
+	padding: 0 60px 0 0;
+}
+
+.col-contact-border {
+	padding: 0 0 0 60px;
+}
+
+
+}
+
+
+/*xs*/ 
+@media screen and (max-width: 767px) {
+
+.page-about h2 {
+	margin-top: 0;
+}
+
+body {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+.page-about h2 {
+	font-size: 20px;
+}
+
+.col-contact-padding, .col-contact-border {
+	padding: 40px;
+}
+
+.find-me {
+	margin-top: 150px;
+}
+
+.contact-me-block {
+	margin-top: 160px;
+}
+
+
+}
+
+
+

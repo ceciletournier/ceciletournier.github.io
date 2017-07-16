@@ -44,62 +44,67 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-center">
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center col-contact-padding">
+
                 <h2>LOOKING FOR</h2>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 text-center">
-                <h2>OR CONTACT ME</h2>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-center">
-
-                 <p class="looking-for">Je suis Cécile Tournier, j’ai 22 ans et je vis à Paris. Je suis donc en recherche d’un poste de webdesigner ux - graphiste à l’étranger, mais également m'offir une expérience à l'international.</p>
+                <p class="looking-for">I am currently searching for an UX - UI designer job in United state for October. Don't hesitate to contact me, you can check <a href="#" target="_blank">my CV.</a></p>
 
                 <h2 class="find-me">FIND ME HERE</h2>
-				
-				<div class="contact-reseau">
-					<ul class="list-unstyled list-inline contact-reseau-list">
-						<li><a href="#" class="be-contact-hover clip" data-clipboard-text="@Cécile Tournier"><img src="images/be-contact-page.png" alt=""/></a></li>
-						<li><a href="#" class="in-contact-hover clip" data-clipboard-text="@Cécile Tournier"><img src="images/in-contact-page.png" alt=""/></a></li>
-						<li><a href="#" class="mail-contact-hover clip" data-clipboard-text="tournier.cecile@hotmail.fr"><img src="images/mail-contact-page.png" alt=""/></a></li>
-						</br>
-					</ul>
-					<div class="contact-reseau-click show1 show2">(click to copy)</div>
-					<div class="contact-reseau-title show1">@Cécile Tournier</div>
-					<div class="contact-reseau-title show2">tournier.cecile@hotmail.fr</div>
-				</div>
+                
+                <div class="contact-reseau">
+                    <ul class="list-unstyled list-inline contact-reseau-list">
+                        <li><a href="#" class="be-contact-hover clip" data-clipboard-text="@Cécile Tournier"><img src="images/be-contact-page.png" alt=""/></a></li>
+                        <li><a href="#" class="in-contact-hover clip" data-clipboard-text="@Cécile Tournier"><img src="images/in-contact-page.png" alt=""/></a></li>
+                        <li><a href="#" class="mail-contact-hover clip" data-clipboard-text="tournier.cecile@hotmail.fr"><img src="images/mail-contact-page.png" alt=""/></a></li>
+                        </br>
+                    </ul>
+                </div>
+                
+                <div>
+                    <div class="contact-reseau-click show1 show2">(click to copy)</div>
+                    <div class="contact-reseau-title show1">@Cécile Tournier</div>
+                    <div class="contact-reseau-title show2">tournier.cecile@hotmail.fr</div>
+                </div>
+
             </div>
 
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">
+<!--
+            <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs text-center">
                 <img src="images/filet-contact.png" alt=""/>
             </div>
 
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-center">
-				<form onsubmit="return sendForm()" method="GET" name="contactform">
-					<div class="form-contact">
-						<label class="sr-only" for="inlineFormInputGroup">Votre email</label>
-						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-							<div class="input-group-addon"><img src="images/mail-footer.png"/></div>
-							<input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Votre email" name="_replyto" required>
-						</div>
-					</div>
+            col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2
+!-->
 
-					<div class="form-contact">
-						<label class="sr-only" for="inlineFormInputGroup">Objet</label>
-						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-							<div class="input-group-addon"><img src="images/object.png"/></div>
-							<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Objet" name="_subject" required>
-						</div>
-					</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center col-contact-border">
+            
+            <h2 class="contact-me-block">OR CONTACT ME</h2>
+                
+                <form onsubmit="return sendForm()" method="GET" name="contactform">
+                    <div class="form-contact">
+                        <label class="sr-only" for="inlineFormInputGroup">Votre email</label>
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="input-group-addon"><img src="images/mail-footer.png"/></div>
+                            <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Votre email" name="_replyto" required>
+                        </div>
+                    </div>
 
-					<div class="form-message">
-						<label class="sr-only" for="inlineFormInputGroup">Message</label>
-						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
-							<textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message" name="message" required></textarea>
-						</div>
-					</div>
+                    <div class="form-contact">
+                        <label class="sr-only" for="inlineFormInputGroup">Objet</label>
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="input-group-addon"><img src="images/object.png"/></div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Objet" name="_subject" required>
+                        </div>
+                    </div>
+
+                    <div class="form-message">
+                        <label class="sr-only" for="inlineFormInputGroup">Message</label>
+                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message" name="message" required></textarea>
+                        </div>
+                    </div>
 
                     <div class="form-submitted form-submitted-success" >
                         <span>Message sent !</span>
@@ -109,8 +114,8 @@
                         <span>An error occured :(</span>
                     </div>
 
-					<input type="submit" class="button-contact-me" value="CONTACT ME">
-				</form>
+                    <input type="submit" class="button-contact-me" value="CONTACT ME">
+                </form>
             </div>
         </div>
     </div>
