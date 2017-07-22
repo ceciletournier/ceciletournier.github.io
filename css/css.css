@@ -138,8 +138,8 @@ h2 {
 
 .wrapper {
 	min-height: 100%;
-	position:relative;
-	/*margin-bottom: 50px;*/
+	position:relative;	
+	padding-bottom: 25px;
 }
 
 footer {	
@@ -149,11 +149,10 @@ footer {
 	font-weight: 400;
 	color: #b6b6b6;	
 
-	margin: 0;
-	padding: 0;
+	margin: 10px 0;
 
 	position: absolute;
-	bottom: -25px;
+	bottom: 0px;
 	left: 0;
 	width: 100% !important;
 }
