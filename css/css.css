@@ -139,19 +139,27 @@ h2 {
 .wrapper {
 	min-height: 100%;
 	position:relative;
+	/*margin-bottom: 50px;*/
 }
 
-footer {
-	margin-top: 85px;
+footer {	
+	
 	font-size: 10px;
 	letter-spacing: 2px;
 	font-weight: 400;
-	color: #b6b6b6;
-	margin-bottom: 10px;
+	color: #b6b6b6;	
+
+	margin: 0;
+	padding: 0;
+
 	position: absolute;
-	bottom: 0;
+	bottom: -25px;
 	left: 0;
-	width: 100%;
+	width: 100% !important;
+}
+
+footer div {
+	padding: 0;
 }
 
 footer em {
