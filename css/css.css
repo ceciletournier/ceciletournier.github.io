@@ -33,7 +33,9 @@ header {
 	margin-bottom: 190px;
 	letter-spacing: 2px;
 	background-image: url("../images/bg.png");
-	background-repeat: repeat;
+	background-repeat: no-repeat;	
+	background-size: contain;
+	background-position: top center;
 }
 
 h1 {
@@ -64,8 +66,8 @@ header .contact {
 }
 
 .contact {
-	background-color: #fff;
-	border-radius: 30px;
+	background-color: white;
+	border-radius: 1000px;
 	text-align: center;
 }
 .contact a {
@@ -107,6 +109,9 @@ h2 {
 	font-weight: 500;
 	color: #fff;
 }
+.button-contact-me a {
+	color: #fff;
+}
 
 .presentation-index .button-contact-me {
 	margin-top: 20px;
@@ -131,6 +136,10 @@ h2 {
 	text-transform: uppercase;
 }
 
+.wrapper {
+	min-height: 100%;
+	position:relative;
+}
 
 footer {
 	margin-top: 85px;
@@ -139,6 +148,10 @@ footer {
 	font-weight: 400;
 	color: #b6b6b6;
 	margin-bottom: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
 
 footer em {
