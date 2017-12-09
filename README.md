@@ -1,3 +1,3 @@
 # Mon Site Portfolio/CV
 
-Lien vers le site : https://ceciletournier.github.io/portfolio/
+Lien vers le site : https://ceciletournier.github.io/
