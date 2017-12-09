@@ -121,3 +121,5 @@ http://localhost/index.html -> /favicon.ico
 http://localhost/about.html -> /favicon.ico
 http://localhost/about.html -> /contact.html
 http://localhost/contact.html -> /favicon.ico
+http://localhost/about.html -> /contact.html
+http://localhost/contact.html -> /favicon.ico
