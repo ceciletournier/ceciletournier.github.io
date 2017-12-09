@@ -23,70 +23,91 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 hidden-xs">
                     <ul class="list-unstyled list-inline menu">
                         <li id="logo"><a href="index.html"><img src="images/logo.png" alt="Cécile"/></a></li>
-                        <li><a href="index.html" class="page-active"><h1>WORKS</h1></a></li>
+                        <li><a href="index.html"><h1>WORKS</h1></a></li>
                         <li><a href="about.html">ABOUT</a></li>
                     </ul>   
                 </div>
 
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact">                                    
-					<a href="contact.html">
-						<img src="images/mail.png" alt="mail"/>            
-						<span>CONTACT</span>
-					</a>             
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact hidden-xs">                                    
+                    <a href="contact.html">
+                        <img src="images/mail.png" alt="mail"/>            
+                        <span>CONTACT</span>
+                    </a>             
                 </div>
+
+                <div class="col-xs-6 hidden-lg hidden-md hidden-sm responsive-menu-header">
+                    <a href="index.html"><img src="images/logo-responsive.png" alt="Cécile"/></a>
+                </div>
+
+                <div class="col-xs-6 hidden-lg hidden-md hidden-sm responsive-menu-header text-right">
+                    <img class="menu-responsive" src="images/menu-responsive.png" alt="Menu" onclick="openNav()"/>
+                </div>
+
+                <div id="mySidenav" class="sidenav hidden-lg hidden-md hidden-sm">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">
+                        <img src="images/responsive-menu-work.png" class="margin-image-menu-responsive" alt=""/>WORK</a>
+                    <a href="about.html">
+                        <img src="images/responsive-menu-about.png" class="margin-image-menu-responsive" alt=""/>ABOUT</a>
+                    <a href="contact.html">
+                        <img src="images/responsive-menu-contact.png" class="margin-image-menu-responsive" alt=""/>CONTACT</a>
+                    <a href="images/cv-english-design.pdf">
+                        <img src="images/responsive-menu-cv.png" class="margin-image-menu-responsive" alt=""/>MY CV</a>
+                </div>
+
             </div>
         </div>
     </header>
     <div class="wrapper">
     <div class="container">
 
-        <div class="row presentation-index text-center">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <p>Cécile Tournier</p><em>french ui - ux designer</em></br>
-                <button class="button-contact-me"><a href="contact.html">CONTACT ME</a></button>
+        <div class="row presentation-index">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <p class="hello-presentation"><em>Hello,</em></p><p>I am Cecile Tournier, a french</p><p>UX UI designer living in Bristol.</p></br>
+                <button class="button-contact-me" onclick="window.open('images/cv-english-design.pdf')">SEE MY CV</button>
             </div>
 
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 hideme">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hidemo">
                 <a href="vente-privee-redesign.html"><img class="img-responsive" src="images/vente-privee-redesign.jpg"/>
                 <h2 class="first">VENTE PRIVÉE REDESIGN</h2></a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 hideme">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hidemo">
                 <a href="kain.html"><img class="img-responsive" src="images/kain.jpg"/>
                 <h2>KAIN HAND DYED BATIK</h2></a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 hideme">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hidemo">
                 <a href="vente-privee-brands-ads.html"><img class="img-responsive" src="images/vente-privee-brands-ads.jpg"/>
                 <h2>VENTE PRIVÉE BRANDS ADS</h2></a>
             </div>
     
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 hideme">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hideme">
                 <a href="#"><img class="img-responsive" src="images/la-langue-vivante.jpg"/>
                 <h2>LA LANGUE VIVANTE</h2></a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 hideme">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hideme">
                 <a href="#"><img class="img-responsive" src="images/savencia-fromage-dairy.jpg"/>
                 <h2>SAVENCIA FROMAGE & DAIRY</h2></a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 hideme">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hideme">
                 <a href="#"><img class="img-responsive" src="images/concept-wood.jpg"/>
                 <h2>CONCEPT WOOD</h2></a>
             </div>
     
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 hideme">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hideme">
                 <a href="#"><img class="img-responsive" src="images/usee-handball.jpg"/>
                 <h2>USEE HANDBALL</h2></a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 hideme">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hideme">
                 <a href="#"><img class="img-responsive" src="images/swouitch.jpg"/>
                 <h2>SWOUITCH </h2></a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 hideme">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 hideme">
                 <a href="#"><img class="img-responsive" src="images/studio-pantone-fb-ads.jpg"/>
                 <h2>STUDIO PANTONE ADS</h2></a>
             </div>
@@ -95,15 +116,20 @@
 
     <footer class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
             ALL RIGHT RESERVED 2017 | <em>CÉCILE TOURNIER</em>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                <a href="#"><img src="images/be-footer.png" alt="Behance"/></a>
-                <a href="#"><img src="images/in-footer.png" alt="Linkedin"/></a>
-                <a href="#"><img src="images/mail-footer.png" alt="E-mail"/></a>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right hidden-xs">
+                <!--<a href="#"><img src="images/be-footer.png" alt="Behance"/></a>!-->
+                <a href="https://www.linkedin.com/in/c%C3%A9cile-tournier-760920b4/" target="_blank"><img src="images/in-footer.png" alt="Linkedin"/> Linkedin</a>
+                <a href="contact.html"><img src="images/mail-footer.png" alt="Contact me"/> Contact me</a>
             </div>
+
+            <div class="col-xs-12 text-center hidden-lg hidden-sm hidden-md">
+            ALL RIGHT RESERVED 2017 | <em>CÉCILE TOURNIER</em>
+            </div>
+
         </div>
     </footer>
 
@@ -141,6 +167,17 @@
     
     });
      </script>
+
+     <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
 
 
 </body>

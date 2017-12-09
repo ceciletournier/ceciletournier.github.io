@@ -23,25 +23,45 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 hidden-xs">
                     <ul class="list-unstyled list-inline menu">
                         <li id="logo"><a href="index.html"><img src="images/logo.png" alt="Cécile"/></a></li>
                         <li><a href="index.html">WORKS</a></li>
-                        <li><a href="about.html"><h1>ABOUT</h1></a></li>
+                        <li><a href="about.html">ABOUT</a></li>
                     </ul>   
                 </div>
 
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact">                                    
-					<a href="contact.html">
-						<img src="images/mail.png" alt="mail"/>            
-						<span>CONTACT</span>
-					</a>             
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact hidden-xs">                                    
+                    <a href="contact.html">
+                        <img src="images/mail.png" alt="mail"/>            
+                        <span>CONTACT</span>
+                    </a>             
+                </div>
+
+                <div class="col-xs-6 hidden-lg hidden-md hidden-sm responsive-menu-header">
+                    <a href="index.html"><img src="images/logo-responsive.png" alt="Cécile"/></a>
+                </div>
+
+                <div class="col-xs-6 hidden-lg hidden-md hidden-sm responsive-menu-header text-right">
+                    <img class="menu-responsive" src="images/menu-responsive.png" alt="Menu" onclick="openNav()"/>
+                </div>
+
+                <div id="mySidenav" class="sidenav hidden-lg hidden-md hidden-sm">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">
+                        <img src="images/responsive-menu-work.png" class="margin-image-menu-responsive" alt=""/>WORK</a>
+                    <a href="about.html">
+                        <img src="images/responsive-menu-about.png" class="margin-image-menu-responsive" alt=""/>ABOUT</a>
+                    <a href="contact.html">
+                        <img src="images/responsive-menu-contact.png" class="margin-image-menu-responsive" alt=""/>CONTACT</a>
+                    <a href="images/cv-english-design.pdf">
+                        <img src="images/responsive-menu-cv.png" class="margin-image-menu-responsive" alt=""/>MY CV</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="container">
+    <div class="container ajuster-contenu-verticalement">
 
         <div class="row">
 
@@ -49,19 +69,19 @@
 
                 <h2>LOOKING FOR</h2>
 
-                <p class="looking-for">I am currently looking for an UX - UI designer job in Bristol. Don't hesitate to contact me, you can check <a href="#" target="_blank">my CV.</a></p>
+                <p class="looking-for">I am currently looking for an UX - UI designer job in Bristol. Don't hesitate to contact me, you can check <a href="images/cv-english-design.pdf" target="_blank">my CV.</a></p>
 
                 <h2 class="find-me">FIND ME HERE</h2>
                 
                 <div class="contact-reseau">
                     <ul class="list-unstyled list-inline contact-reseau-list">
-                        <li><a href="#" class="be-contact-hover clip" data-clipboard-text="@Cécile Tournier"><img src="images/be-contact-page.png" alt=""/></a></li>
-                        <li><a href="#" class="in-contact-hover clip" data-clipboard-text="@Cécile Tournier"><img src="images/in-contact-page.png" alt=""/></a></li>
+                        <!--<li><a href="#" class="be-contact-hover clip" data-clipboard-text="@Cécile Tournier"><img src="images/be-contact-page.png" alt=""/></a></li>!-->
+                        <li><a href="https://www.linkedin.com/in/c%C3%A9cile-tournier-760920b4/" target="_blank" class="in-contact-hover clip" data-clipboard-text="@Cécile Tournier"><img src="images/in-contact-page.png" alt=""/></a></li>
                         <li><a href="#" class="mail-contact-hover clip" data-clipboard-text="tournier.cecile@hotmail.fr"><img src="images/mail-contact-page.png" alt=""/></a></li>
                         </br>
                     </ul>
                     <div>
-                        <div class="contact-reseau-click show1 show2">(click to copy)</div>
+                        <div class="contact-reseau-click show2">(click to copy)</div>
                         <div class="contact-reseau-title show1">@Cécile Tournier</div>
                         <div class="contact-reseau-title show2">tournier.cecile@hotmail.fr</div>
                     </div>
@@ -122,14 +142,18 @@
     
     <footer class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
             ALL RIGHT RESERVED 2017 | <em>CÉCILE TOURNIER</em>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                <a href="#"><img src="images/be-footer.png" alt="Behance"/></a>
-                <a href="#"><img src="images/in-footer.png" alt="Linkedin"/></a>
-                <a href="#"><img src="images/mail-footer.png" alt="E-mail"/></a>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right hidden-xs">
+                <!--<a href="#"><img src="images/be-footer.png" alt="Behance"/></a>!-->
+                <a href="https://www.linkedin.com/in/c%C3%A9cile-tournier-760920b4/" target="_blank"><img src="images/in-footer.png" alt="Linkedin"/> Linkedin</a>
+                <a href="contact.html"><img src="images/mail-footer.png" alt="Contact me"/> Contact me</a>
+            </div>
+
+            <div class="col-xs-12 text-center hidden-lg hidden-sm hidden-md">
+            ALL RIGHT RESERVED 2017 | <em>CÉCILE TOURNIER</em>
             </div>
         </div>
     </footer>
@@ -195,6 +219,17 @@
             return false;
         };
     </script>
+
+    <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
 </body>
 
 </html>

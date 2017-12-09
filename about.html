@@ -23,7 +23,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 hidden-xs">
                     <ul class="list-unstyled list-inline menu">
                         <li id="logo"><a href="index.html"><img src="images/logo.png" alt="Cécile"/></a></li>
                         <li><a href="index.html">WORKS</a></li>
@@ -31,12 +31,33 @@
                     </ul>   
                 </div>
 
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact">                                    
-					<a href="contact.html">
-						<img src="images/mail.png" alt="mail"/>            
-						<span>CONTACT</span>
-					</a>             
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 contact hidden-xs">                                    
+                    <a href="contact.html">
+                        <img src="images/mail.png" alt="mail"/>            
+                        <span>CONTACT</span>
+                    </a>             
                 </div>
+
+                <div class="col-xs-6 hidden-lg hidden-md hidden-sm responsive-menu-header">
+                    <a href="index.html"><img src="images/logo-responsive.png" alt="Cécile"/></a>
+                </div>
+
+                <div class="col-xs-6 hidden-lg hidden-md hidden-sm responsive-menu-header text-right">
+                    <img class="menu-responsive" src="images/menu-responsive.png" alt="Menu" onclick="openNav()"/>
+                </div>
+
+                <div id="mySidenav" class="sidenav hidden-lg hidden-md hidden-sm">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">
+                        <img src="images/responsive-menu-work.png" class="margin-image-menu-responsive" alt=""/>WORK</a>
+                    <a href="about.html">
+                        <img src="images/responsive-menu-about.png" class="margin-image-menu-responsive" alt=""/>ABOUT</a>
+                    <a href="contact.html">
+                        <img src="images/responsive-menu-contact.png" class="margin-image-menu-responsive" alt=""/>CONTACT</a>
+                    <a href="images/cv-english-design.pdf">
+                        <img src="images/responsive-menu-cv.png" class="margin-image-menu-responsive" alt=""/>MY CV</a>
+                </div>
+
             </div>
         </div>
     </header>
@@ -56,14 +77,14 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 em-about">
                 <h2>ABOUT ME</h2>
                 <p>Hello, I am Cecile Tournier a 22 year old French UI - UX designer currently living in Bristol. I have just finished my first year of Digital Artistic Director Master Degree specialising in webdesign. I have worked for the European leader in flash sales <a href="http://en.vente-privee.com/registration/AboutUs?CountryCode=EN" target="_blank">vente-privee.com</a> as a UI - UX designer and as a graphic designer aprentice. I have decided to do a gap year abroad to improve my English and have an experience internationally. <em>I am currently searching for an UX - UI designer job.</em></p>
-                <button class="button-contact-me button-CV-me"><a href="#">SEE MY CV</a></button>
+                <button class="button-contact-me button-CV-me" onclick="window.open('images/cv-english-design.pdf')">SEE MY CV</button>
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-center">
                 <div class="competences competences-webd">
-                    <img src="images/filet.png">
+                    <img src="images/filet.png" class="hidden-xs">
                     <h2>UI & UX DESIGN</h2>
                     <p>Thinking and creating the best user experience. Responsive website and mobile application, e-commerce and showcase site.</p>
                     <img src="images/webdesign.png">
@@ -72,7 +93,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-7 col-xs-12 text-center">
                 <div class="competences competences-graphic">
-                    <img src="images/filet.png">
+                    <img src="images/filet.png" class="hidden-xs">
                     <h2>GRAPHIC DESIGN</h2>
                     <p>Creating all graphics elements for web and printed materials, brand's visual identity </p>
                     <img src="images/graphic.png">
@@ -81,7 +102,7 @@
 
             <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 text-center">
                 <div class="competences competences-coding">
-                    <img src="images/filet.png">
+                    <img src="images/filet.png" class="hidden-xs">
                     <h2>CODING</h2>
                     <p>Front end developement HTML, CSS, JS, BOOTSTRAP</p>
                     <img src="images/coding.png">
@@ -91,7 +112,7 @@
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                <button class="button-contact-me button-contact-me-blue" ><a href="#">CONTACT ME</a></button>
+                <button class="button-contact-me button-contact-me-blue" onclick="window.open('contact.html')">CONTACT ME</button>
             </div>
         </div>
 
@@ -99,7 +120,7 @@
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 margin-top-sm-plus margin_bottom_70_lg">
                 <h2>MY EXPERIENCE</h2>
     
-                <p>You can see my CV <a href="#" target="_blank">here</a>, or on my <a href="https://www.linkedin.com/in/c%C3%A9cile-tournier-760920b4/?ppe=1" target="_blank">Linkedin.</a><p>
+                <p>You can see my CV <a href="images/cv-english-design.pdf" target="_blank">here</a>, or on my <a href="https://www.linkedin.com/in/c%C3%A9cile-tournier-760920b4/" target="_blank">Linkedin.</a><p>
                 <p>I have completed my first year of apprenticeship at the ECV Digital School in Paris , I am now even more satisfied and passionate about the job and the field I have chosen. I was studying 1 day per week and the other 4 days I took part in two different teams at <a href="http://en.vente-privee.com/registration/AboutUs?CountryCode=EN" target="_blank">vente-privee</a>. With the User Engagement team, I was in charge of thinking about and designing the customers' experience from the first arrival on the website until their first purchase. With the acquisition team, I was in charge of designing all the creative elements needed for online ad campaigns (facebook ads, affiliation banners, emails, landing page).</p>
                 <p>I have studied a Digital Project Manager BA, also at ECV Digital. I completed a 6 month internship in a very young, multi-purpose communication agency called Studio Pantone. I worked in various role : creating brand identitity, logos, and graphic chart. I have designed printed materials for a variety of businesses and budgets, professionals and individuals (buisness cards, posters, flyers and leaflets, wedding invitations…). I have designed and developed responsive website, e-commerce and showcase site (codding in HTML & CSS).</p>
 
@@ -120,19 +141,34 @@
     
     <footer class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs">
             ALL RIGHT RESERVED 2017 | <em>CÉCILE TOURNIER</em>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                <a href="#"><img src="images/be-footer.png" alt="Behance"/></a>
-                <a href="#"><img src="images/in-footer.png" alt="Linkedin"/></a>
-                <a href="#"><img src="images/mail-footer.png" alt="E-mail"/></a>
+            <div class="col-lg-6 col-md-6 col-sm-6 text-right hidden-xs">
+                <!--<a href="#"><img src="images/be-footer.png" alt="Behance"/></a>!-->
+                <a href="https://www.linkedin.com/in/c%C3%A9cile-tournier-760920b4/" target="_blank"><img src="images/in-footer.png" alt="Linkedin"/> Linkedin</a>
+                <a href="contact.html"><img src="images/mail-footer.png" alt="Contact me"/> Contact me</a>
+            </div>
+
+            <div class="col-xs-12 text-center hidden-lg hidden-sm hidden-md">
+            ALL RIGHT RESERVED 2017 | <em>CÉCILE TOURNIER</em>
             </div>
         </div>
     </footer>
     
     </div>
+
+
+    <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 
 </body>
 
