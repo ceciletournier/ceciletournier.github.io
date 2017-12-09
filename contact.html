@@ -101,7 +101,7 @@
             
             <h2 class="contact-me-block">OR CONTACT ME</h2>
                 
-                <form onsubmit="return sendForm()" method="GET" name="contactform">
+                <form onsubmit="return sendForm()" method="POST" name="contactform">
                     <div class="form-contact">
                         <label class="sr-only" for="inlineFormInputGroup">Votre email</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
@@ -198,12 +198,13 @@
 	</script>
 
     <script>
-        function sendForm() {
-            $.ajax({
-                url: "https://formspree.io/tournier.cecile@hotmail.fr", 
+        function sendForm() { //tournier.cecile@hotmail.fr
+            $.ajax({ 
+                url: "https://formspree.io/vincent.tr95@gmail.com", 
                 method: "POST",
                 data: {
                     _subject: document.forms["contactform"]._subject.value,
+                    subject: document.forms["contactform"]._subject.value,
                     _replyto: document.forms["contactform"]._replyto.value,
                     message: document.forms["contactform"].message.value,
                     },
