@@ -420,6 +420,22 @@ footer a:hover {
 	width: 100%;
 }
 
+.form-submitted  {
+
+}
+
+.form-submitted-success {
+	background-color: #8ddd82;
+	border: none;
+	font-size: 14px;
+	padding: 10px 0;;
+}
+
+.form-submitted-error {
+	border: none;
+	font-size: 14px;
+	padding: 10px 0;
+}
 
 
 /*********************************************************                       VP             */
@@ -530,6 +546,10 @@ li {
 
 .competences h2{
 	margin-top: 12px;
+}
+
+.page-about .button-contact-me {
+	margin-bottom: 40px;
 }
 
 }
