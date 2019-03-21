@@ -32,10 +32,6 @@ header {
 	line-height: 76px;
 	margin-bottom: 100px;
 	letter-spacing: 2px;
-	background-image: url("../images/bg.png");
-	background-repeat: no-repeat;	
-	background-size: contain;
-	background-position: top center;
 }
 
 h1 {
